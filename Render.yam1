@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: signal-galaxy
+    runtime: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+      - key: WEB_CONCURRENCY
+        value: 1
